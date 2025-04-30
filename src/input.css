@@ -1,9 +1,20 @@
 @import "tailwindcss";
 
-
 @layer theme {
     :root {
         --font-sans: ui-sans-serif, system-ui, sans-serif;
         --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas;
+    }
+
+    :root[data-theme="dark"] {
+        --background: #1a1a1a;
+        --text: #ffffff;
+        --card-bg: #2d2d2d;
+    }
+
+    :root[data-theme="light"] {
+        --background: #ffffff;
+        --text: #1a1a1a;
+        --card-bg: #f3f4f6;
     }
 }
