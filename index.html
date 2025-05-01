@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet">
     <title>Portfolio2025v2</title>
 </head>
 
-<body class="mx-auto dark:bg-neutral-900 dark:text-neutral-200">
+<body class="mx-auto bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
     <!-- header -->
     <header class="flex items-center justify-between p-10">
         <nav class="flex gap-10 items-center">
@@ -21,9 +22,14 @@
         </nav>
 
 
-        <button id="openModal"
-            class="fixed right-4 mt-2 px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full shadow-xl transition-colors duration-300">
-            🌓
+        <button id="theme-switch"
+            class="fixed right-4 top-4 w-10 h-10 bg-gray-200 dark:bg-gray-800 rounded-full shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer z-50">
+            <span class="material-symbols-outlined block dark:hidden">
+                light_mode
+            </span>
+            <span class="material-symbols-outlined hidden dark:block">
+                dark_mode
+            </span>
         </button>
     </header>
 
@@ -336,7 +342,9 @@
             </article>
         </section>
     </main>
-    <footer class="p-5 bg-gray-200  dark:bg-neutral-800">
+
+    <!-- footer section -->
+    <footer class="p-5 bg-gray-200  dark:bg-neutral-800 ">
         <div class="container mx-auto flex justify-center items-center">
             <p id="footer-date" class="text-gray-500 text-xs"></p>
         </div>
