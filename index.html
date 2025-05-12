@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet">
-
     <title>Portfolio2025v2</title>
 </head>
 
-<body class="mx-auto">
+<body class="mx-auto bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
     <!-- header -->
     <header class="flex items-center justify-between p-10">
         <nav class="flex gap-10 items-center">
@@ -22,20 +22,15 @@
         </nav>
 
 
-        <button id="openModal" class="fixed right-4 mt-2 px-4 py-2 bg-gray-800 text-white rounded-full shadow-lg">
-            🎨
+        <button id="theme-switch"
+            class="fixed right-4 top-4 w-10 h-10 bg-gray-200 dark:bg-gray-800 rounded-full shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer z-50">
+            <span class="material-symbols-outlined block dark:hidden">
+                light_mode
+            </span>
+            <span class="material-symbols-outlined hidden dark:block">
+                dark_mode
+            </span>
         </button>
-
-        <!-- Modale flottante -->
-        <div id="themeModal" class="fixed top-20 right-4 mt-2 hidden bg-white border rounded shadow p-4 space-y-2">
-            <div class="flex gap-2">
-                <button data-theme="light" class="w-8 h-8 rounded-full bg-white border"></button>
-                <button data-theme="dark" class="w-8 h-8 rounded-full bg-gray-800"></button>
-                <button data-theme="orange" class="w-8 h-8 rounded-full bg-orange-400"></button>
-                <button data-theme="blue" class="w-8 h-8 rounded-full bg-blue-500"></button>
-            </div>
-        </div>
-        </div>
     </header>
 
     <!-- hero section -->
@@ -50,7 +45,7 @@
 
             <!-- mes sites web -->
             <article
-                class="flex flex-col justify-between p-5 gap-3 items-center bg-gray-200 rounded-2xl w-80 h-50 min-w-80 min-h-50 shadow-xl">
+                class="flex flex-col justify-between p-5 gap-3 items-center bg-gray-200 rounded-2xl w-80 h-50 min-w-80 min-h-50 shadow-xl dark:bg-neutral-800">
                 <h1 class="font-bold text-2xl self-start">Mes sites web</h1>
                 <article class="flex flex-wrap gap-5">
                     <article class="flex flex-col gap-2">
@@ -58,7 +53,7 @@
                             src="./assets/images/DU-ESTHETICS-1.png" alt="image">
                         <p class="text-xs">D-estethics</p>
                         <a target="_blank" href="https://events.chuliege.be/du-esthetics/"
-                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center">site
+                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center  dark:text-orange-400 dark:border-orange-400">site
                             web</a>
                     </article>
                     <article class="flex flex-col gap-2 ">
@@ -66,7 +61,7 @@
                             src="./assets/images/Logo Xalix.webp" alt="image">
                         <p class="text-xs self-center">XaliX</p>
                         <a target="_blank" href="https://xalix.be/"
-                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center">site
+                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center dark:text-orange-400 dark:border-orange-400">site
                             web</a>
                     </article>
                     <article class="flex flex-col gap-2">
@@ -74,7 +69,7 @@
                             src="./assets/images/DU-ESTHETICS-1.png" alt="image">
                         <p class="text-xs self-center">The Lasts Coders</p>
                         <a target="_blank" href="https://events.chuliege.be/du-esthetics/"
-                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center">site
+                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center dark:text-orange-400 dark:border-orange-400">site
                             web</a>
                     </article>
                 </article>
@@ -82,21 +77,21 @@
 
             <!-- mes hobbies -->
             <article
-                class="bg-gray-200 rounded-2xl p-5 w-80 h-50 min-w-80 min-h-50 flex flex-col gap-5 justify-between items-center shadow-xl">
+                class="bg-gray-200 rounded-2xl p-5 w-80 h-50 min-w-80 min-h-50 flex flex-col gap-5 justify-between items-center shadow-xl  dark:bg-neutral-800">
                 <h1 class="font-bold text-2xl self-start">Mes hobbies</h1>
                 <article class="flex flex-wrap gap-2">
-                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2
+                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2  dark:bg-neutral-800 dark:border dark:border-orange-50/20
                     ">
                         <img class="w-6 h-6" src="./assets/images/martial-arts-uniform_1f94b.png" alt="">
                         <p>Gym</p>
                     </div>
-                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2
+                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2  dark:bg-neutral-800 dark:border dark:border-orange-50/20
                     ">
                         <img class="w-6 h-6"
                             src="./assets/images/technologist-medium-skin-tone_1f9d1-1f3fd-200d-1f4bb.png" alt="">
                         <p>Informatique</p>
                     </div>
-                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2
+                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2  dark:bg-neutral-800 dark:border dark:border-orange-50/20
                     ">
                         <img class="w-6 h-6"
                             src="./assets/images/man-swimming-medium-skin-tone_1f3ca-1f3fd-200d-2642-fe0f.png" alt="">
@@ -115,7 +110,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm">
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline  p-10 min-h-40 min-w-80 shadow-lg">
+                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline  p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
                     <div class="w-full flex justify-between">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain"
@@ -126,7 +121,9 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-sm border-2 rounded-2xl p-2 text-blue-500">2025 - now </p>
+                            <p
+                                class="text-sm border-2 rounded-2xl p-2 text-blue-500 dark:text-orange-400 dark:border-orange-400">
+                                2025 - now </p>
                         </div>
                     </div>
                     <div>
@@ -141,7 +138,7 @@
                 </article>
 
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg">
+                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
                     <div class="flex w-full justify-between">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white p-2" src="./assets/images/Logo Xalix.webp"
@@ -153,7 +150,9 @@
                             </div>
                         </div>
                         <div>
-                            <p class="text-sm bg-white rounded-2xl p-2 text-gray-500/70">2023 - 2024</p>
+                            <p
+                                class="text-sm bg-white rounded-2xl p-2 text-gray-500/70 dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                2023 - 2024</p>
                         </div>
                     </div>
                     <div>
@@ -168,7 +167,7 @@
                 </article>
                 <!--  -->
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg">
+                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
                     <div class="w-full justify-between flex">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white" src="./assets/images/Connecton (1).jpg"
@@ -179,7 +178,9 @@
                             </div>
                         </div>
                         <div>
-                            <p class=" bg-white rounded-2xl p-2 text-gray-500/70 text-sm">2025 - now </p>
+                            <p
+                                class=" bg-white rounded-2xl p-2 text-gray-500/70 text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                2025 - now </p>
                         </div>
                     </div>
                     <div>
@@ -194,7 +195,7 @@
                 </article>
                 <!--  -->
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg">
+                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
                     <div class="w-full flex justify-between">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-cover p-2"
@@ -205,7 +206,9 @@
                             </div>
                         </div>
                         <div>
-                            <p class=" bg-white rounded-2xl p-2 text-gray-500/70 text-sm">2015 - 2017</p>
+                            <p
+                                class=" bg-white rounded-2xl p-2 text-gray-500/70 text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                2015 - 2017</p>
                         </div>
                     </div>
                     <div>
@@ -229,7 +232,8 @@
 
                     <div class="flex gap-5 grow">
 
-                        <div class="bg-gray-200 rounded-2xl p-5 flex flex-col items-start gap-2 shadow-lg ">
+                        <div
+                            class="bg-gray-200 rounded-2xl p-5 flex flex-col items-start gap-2 shadow-lg  dark:bg-neutral-800">
                             <p class="font-bold text-sm">Code</p>
                             <div class="flex gap-2 sm:flex-wrap">
                                 <img class="w-6 h-6 object-contain" src="./assets/images/git.png" alt="image"><img
@@ -241,7 +245,8 @@
                             </div>
                         </div>
 
-                        <div class="bg-gray-200 rounded-2xl p-5 flex flex-col items-start gap-2 grow shadow-lg">
+                        <div
+                            class="bg-gray-200 rounded-2xl p-5 flex flex-col items-start gap-2 grow shadow-lg  dark:bg-neutral-800">
                             <p class="font-bold text-sm">Outils de design</p>
                             <div class="flex gap-2 sm:flex-wrap">
                                 <img class="w-6 h-6 object-contain" src="./assets/images/figma.png" alt="image"><img
@@ -257,7 +262,8 @@
 
                     <div class="flex gap-5">
                         <div class="rounded-2xl flex items-start gap-2">
-                            <div class="bg-gray-200 rounded-2xl w-full flex flex-col items-start gap-6 p-5 shadow-lg">
+                            <div
+                                class="bg-gray-200 rounded-2xl w-full flex flex-col items-start gap-6 p-5 shadow-lg  dark:bg-neutral-800">
                                 <p class="font-bold text-sm">Langages</p>
                                 <div class="flex gap-2 items-center justify-center p-5">
                                     <img class="w-6 h-6 object-contain"
@@ -270,15 +276,27 @@
                             </div>
                         </div>
 
-                        <div class="bg-gray-200 rounded-2xl p-5 flex flex-col gap-2 shadow-lg">
+                        <div class="bg-gray-200 rounded-2xl p-5 flex flex-col gap-2 shadow-lg  dark:bg-neutral-800">
                             <p class="font-bold text-sm">Soft Skills</p>
                             <div class="flex flex-wrap gap-2">
-                                <p class="bg-white p-2 shadow-lg rounded-2xl text-sm">Esprit analytique</p>
-                                <p class="bg-white p-2 shadow-lg rounded-2xl text-sm">Organisation</p>
-                                <p class="bg-white p-2 shadow-lg rounded-2xl text-sm">Proactivité</p>
-                                <p class="bg-white p-2 shadow-lg rounded-2xl text-sm">Flexibilité </p>
-                                <p class="bg-white p-2 shadow-lg rounded-2xl text-sm">Rigueur</p>
-                                <p class="bg-white p-2 shadow-lg rounded-2xl text-sm">Aisance relationnell </p>
+                                <p
+                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                    Esprit analytique</p>
+                                <p
+                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                    Organisation</p>
+                                <p
+                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                    Proactivité</p>
+                                <p
+                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                    Flexibilité </p>
+                                <p
+                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                    Rigueur</p>
+                                <p
+                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                    Aisance relationnell </p>
                             </div>
                         </div>
                     </div>
@@ -290,7 +308,8 @@
             <article>
                 <h2 class="text-2xl font-bold pb-5">Education</h2>
                 <div class="flex flex-col gap-5">
-                    <div class="bg-gray-200 rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg">
+                    <div
+                        class="bg-gray-200 rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg dark:bg-neutral-800">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain self-center"
                                 src="./assets/images/IFAPME_logo-couleurs+cadreblanc.jpg" alt="image">
@@ -300,9 +319,12 @@
                                 <p class="text-xs">Château Massart - liège</p>
                             </div>
                         </div>
-                        <p class="bg-white rounded-xl p-2 text-xs  text-gray-500/70">2023 - 2025</p>
+                        <p
+                            class="bg-white rounded-xl p-2 text-xs  text-gray-500/70 dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                            2023 - 2025</p>
                     </div>
-                    <div class="bg-gray-200 rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg">
+                    <div
+                        class="bg-gray-200 rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg dark:bg-neutral-800">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain p-1.5"
                                 src="./assets/images/andap.png" alt="image">
@@ -312,19 +334,23 @@
                                 <p class="text-xs">Manizales - Caldas</p>
                             </div>
                         </div>
-                        <p class="bg-white rounded-xl p-2 text-xs  text-gray-500/70">2014 - 2017</p>
+                        <p
+                            class="bg-white rounded-xl p-2 text-xs  text-gray-500/70 dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                            2014 - 2017</p>
                     </div>
                 </div>
             </article>
         </section>
     </main>
-    <footer class="p-5 bg-gray-200 ">
+
+    <!-- footer section -->
+    <footer class="p-5 bg-gray-200  dark:bg-neutral-800 ">
         <div class="container mx-auto flex justify-center items-center">
             <p id="footer-date" class="text-gray-500 text-xs"></p>
         </div>
     </footer>
     <script src="script.js"></script>
-    <script src="theme.js"></script>
+    <script src="darkMode.js"></script>
 </body>
 
 </html>
