@@ -1,12 +1,19 @@
-// Fonction pour mettre à jour la date dans le footer
-function updateFooterDate() {
-  const currentYear = new Date().getFullYear();
-  const version = "v2.0"; // Version actuelle
+// Script pour mettre à jour l'année dans le footer
+document.addEventListener("DOMContentLoaded", function () {
   const footerDate = document.getElementById("footer-date");
   if (footerDate) {
-    footerDate.textContent = `© ${currentYear} - Portfolio ${version}`;
+    footerDate.textContent = "© " + new Date().getFullYear() + " Jhon Florez";
   }
-}
 
-// Mettre à jour la date au chargement de la page
-document.addEventListener("DOMContentLoaded", updateFooterDate);
+  // Test pour vérifier si le mode sombre fonctionne
+  console.log("Mode sombre:", document.documentElement.classList.contains("dark"));
+  console.log("HTML classes:", document.documentElement.classList.toString());
+
+  // Fonction pour réinitialiser le thème (utile en cas de problème)
+  window.resetTheme = function() {
+    localStorage.removeItem("theme");
+    document.documentElement.classList.remove("dark");
+    console.log("Thème réinitialisé - rechargez la page pour voir les changements");
+    location.reload();
+  };
+});

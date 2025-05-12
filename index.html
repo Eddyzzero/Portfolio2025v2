@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="fr" class="transition-colors duration-400">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet">
     <title>Portfolio2025v2</title>
 </head>
 
-<body class="mx-auto bg-white text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
+<body class="mx-auto bg-theme-primary text-theme-primary transition-colors duration-400">
+
     <!-- header -->
     <header class="flex items-center justify-between p-10">
         <nav class="flex gap-10 items-center">
             <p class="text-4xl font-bold">Jhon Florez</p>
             <p>30ans, Colombo-Belge</p>
-            <a class="hover:text-amber-600 hover:transition-colors duration-300"
+            <a class="hover-theme hover:transition-colors duration-300"
                 href="mailto:jhon.florezr@gmail.com">jhon.florezr@gmail.com</a>
             <a href="">
             </a>
@@ -23,11 +25,11 @@
 
 
         <button id="theme-switch"
-            class="fixed right-4 top-4 w-10 h-10 bg-gray-200 dark:bg-gray-800 rounded-full shadow-xl transition-all duration-300 flex items-center justify-center cursor-pointer z-50">
-            <span class="material-symbols-outlined block dark:hidden">
+            class="fixed right-4 top-4 w-10 h-10 bg-theme-secondary rounded-full shadow-theme transition-all duration-300 flex items-center justify-center cursor-pointer z-50 hover:bg-theme-secondary">
+            <span class="material-symbols-outlined light-icon">
                 light_mode
             </span>
-            <span class="material-symbols-outlined hidden dark:block">
+            <span class="material-symbols-outlined dark-icon">
                 dark_mode
             </span>
         </button>
@@ -36,7 +38,7 @@
     <!-- hero section -->
     <main class="max-w-[1100px] mx-auto">
 
-        <section class="flex gap-5 p-10 sm:flex-wrap sm:justify-evenly items-center justify-between md:flex-row">
+        <section class="flex flex-col sm:flex-row gap-5 p-10 items-center sm:justify-evenly">
 
             <!-- photo de profile -->
             <article class="w-80 h-50 min-w-80 min-h-50 shadow-xl rounded-2xl">
@@ -45,31 +47,31 @@
 
             <!-- mes sites web -->
             <article
-                class="flex flex-col justify-between p-5 gap-3 items-center bg-gray-200 rounded-2xl w-80 h-50 min-w-80 min-h-50 shadow-xl dark:bg-neutral-800">
-                <h1 class="font-bold text-2xl self-start">Mes sites web</h1>
+                class="flex flex-col justify-between p-5 gap-3 items-center bg-theme-secondary rounded-2xl w-80 h-50 min-w-80 min-h-50 shadow-theme">
+                <h1 class="font-bold text-2xl self-start text-theme-primary">Mes sites web</h1>
                 <article class="flex flex-wrap gap-5">
                     <article class="flex flex-col gap-2">
-                        <img class="self-center w-16 h-16 bg-white rounded-2xl shadow-lg"
+                        <img class="self-center w-16 h-16 bg-white rounded-2xl shadow-theme"
                             src="./assets/images/DU-ESTHETICS-1.png" alt="image">
-                        <p class="text-xs">D-estethics</p>
+                        <p class="text-xs text-theme-primary">D-estethics</p>
                         <a target="_blank" href="https://events.chuliege.be/du-esthetics/"
-                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center  dark:text-orange-400 dark:border-orange-400">site
-                            web</a>
-                    </article>
-                    <article class="flex flex-col gap-2 ">
-                        <img class="self-center w-16 h-16 bg-white rounded-2xl p-2 shadow-lg"
-                            src="./assets/images/Logo Xalix.webp" alt="image">
-                        <p class="text-xs self-center">XaliX</p>
-                        <a target="_blank" href="https://xalix.be/"
-                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center dark:text-orange-400 dark:border-orange-400">site
+                            class="text-xs accent-theme border-2 border-theme rounded-xl p-1 self-center">site
                             web</a>
                     </article>
                     <article class="flex flex-col gap-2">
-                        <img class="self-center w-16 h-16 bg-white rounded-2xl shadow-lg"
+                        <img class="self-center w-16 h-16 bg-white rounded-2xl p-2 shadow-theme"
+                            src="./assets/images/Logo Xalix.webp" alt="image">
+                        <p class="text-xs self-center text-theme-primary">XaliX</p>
+                        <a target="_blank" href="https://xalix.be/"
+                            class="text-xs accent-theme border-2 border-theme rounded-xl p-1 self-center">site
+                            web</a>
+                    </article>
+                    <article class="flex flex-col gap-2">
+                        <img class="self-center w-16 h-16 bg-white rounded-2xl shadow-theme"
                             src="./assets/images/DU-ESTHETICS-1.png" alt="image">
-                        <p class="text-xs self-center">The Lasts Coders</p>
+                        <p class="text-xs self-center text-theme-primary">The Lasts Coders</p>
                         <a target="_blank" href="https://events.chuliege.be/du-esthetics/"
-                            class="text-xs text-blue-500 border-2 border-blue-500 rounded-xl p-1 self-center dark:text-orange-400 dark:border-orange-400">site
+                            class="text-xs accent-theme border-2 border-theme rounded-xl p-1 self-center">site
                             web</a>
                     </article>
                 </article>
@@ -77,25 +79,22 @@
 
             <!-- mes hobbies -->
             <article
-                class="bg-gray-200 rounded-2xl p-5 w-80 h-50 min-w-80 min-h-50 flex flex-col gap-5 justify-between items-center shadow-xl  dark:bg-neutral-800">
-                <h1 class="font-bold text-2xl self-start">Mes hobbies</h1>
+                class="bg-theme-secondary rounded-2xl p-5 w-80 h-50 min-w-80 min-h-50 flex flex-col gap-5 justify-between items-center shadow-theme">
+                <h1 class="font-bold text-2xl self-start text-theme-primary">Mes hobbies</h1>
                 <article class="flex flex-wrap gap-2">
-                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2  dark:bg-neutral-800 dark:border dark:border-orange-50/20
-                    ">
+                    <div class="bg-theme-secondary p-2 rounded-2xl flex items-center gap-2 shadow-theme">
                         <img class="w-6 h-6" src="./assets/images/martial-arts-uniform_1f94b.png" alt="">
-                        <p>Gym</p>
+                        <p class="text-theme-primary">Gym</p>
                     </div>
-                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2  dark:bg-neutral-800 dark:border dark:border-orange-50/20
-                    ">
+                    <div class="bg-theme-secondary p-2 rounded-2xl flex items-center gap-2 shadow-theme">
                         <img class="w-6 h-6"
                             src="./assets/images/technologist-medium-skin-tone_1f9d1-1f3fd-200d-1f4bb.png" alt="">
-                        <p>Informatique</p>
+                        <p class="text-theme-primary">Informatique</p>
                     </div>
-                    <div class="bg-white shadow-lg p-2 rounded-2xl flex items-center gap-2  dark:bg-neutral-800 dark:border dark:border-orange-50/20
-                    ">
+                    <div class="bg-theme-secondary p-2 rounded-2xl flex items-center gap-2 shadow-theme">
                         <img class="w-6 h-6"
                             src="./assets/images/man-swimming-medium-skin-tone_1f3ca-1f3fd-200d-2642-fe0f.png" alt="">
-                        <p>Natation</p>
+                        <p class="text-theme-primary">Natation</p>
                     </div>
                 </article>
             </article>
@@ -110,64 +109,62 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm">
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline  p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
+                    class="bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="w-full flex justify-between">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain"
                                 src="./assets/images/Logo CHU Coul Petit.png" alt="image">
                             <div>
-                                <h2 class="text-xl font-bold">CHU de liège</h2>
-                                <p>Web developer</p>
+                                <h2 class="text-xl font-bold text-theme-primary">CHU de liège</h2>
+                                <p class="text-theme-primary">Web developer</p>
                             </div>
                         </div>
                         <div>
-                            <p
-                                class="text-sm border-2 rounded-2xl p-2 text-blue-500 dark:text-orange-400 dark:border-orange-400">
+                            <p class="text-xs border-2 border-theme rounded-2xl p-2 accent-theme">
                                 2025 - now </p>
                         </div>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <p>Stage en developpement web</p>
-                                <p>CMS : Wordpress, jalios</p>
-                                <p>Charte graphique, maquette, intégration, SEO.</p>
+                                <p class="text-theme-primary">Stage en developpement web</p>
+                                <p class="text-theme-primary">CMS : Wordpress, jalios</p>
+                                <p class="text-theme-primary">Charte graphique, maquette, intégration, SEO.</p>
                             </li>
                         </ul>
                     </div>
                 </article>
 
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
+                    class="bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="flex w-full justify-between">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white p-2" src="./assets/images/Logo Xalix.webp"
                                 alt="image">
                             <div>
-                                <h2 class="text-xl font-bold">XaliX </h2>
-                                <h2 class="text-xl font-bold">rental & technical solutions</h2>
-                                <p>Apprenti commercial</p>
+                                <h2 class="text-xl font-bold text-theme-primary">XaliX </h2>
+                                <h2 class="text-xl font-bold text-theme-primary">rental & technical solutions</h2>
+                                <p class="text-theme-primary">Apprenti commercial</p>
                             </div>
                         </div>
                         <div>
-                            <p
-                                class="text-sm bg-white rounded-2xl p-2 text-gray-500/70 dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                            <p class="text-xs bg-theme-secondary rounded-2xl p-2 text-theme-soft border-2 border-theme">
                                 2023 - 2024</p>
                         </div>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <p>Refonte de site web xalix.be</p>
-                                <p>CMS : Wordpress</p>
-                                <p>Gestion et comprehension des besoins client</p>
+                                <p class="text-theme-primary">Refonte de site web xalix.be</p>
+                                <p class="text-theme-primary">CMS : Wordpress</p>
+                                <p class="text-theme-primary">Gestion et comprehension des besoins client</p>
                             </li>
                         </ul>
                     </div>
                 </article>
                 <!--  -->
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
+                    class="bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="w-full justify-between flex">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white" src="./assets/images/Connecton (1).jpg"
@@ -178,8 +175,7 @@
                             </div>
                         </div>
                         <div>
-                            <p
-                                class=" bg-white rounded-2xl p-2 text-gray-500/70 text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                            <p class=" bg-theme-secondary rounded-2xl p-2 text-xs border-2 border-theme">
                                 2025 - now </p>
                         </div>
                     </div>
@@ -195,19 +191,18 @@
                 </article>
                 <!--  -->
                 <article
-                    class=" bg-gray-200 rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-lg  dark:bg-neutral-800">
+                    class=" bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="w-full flex justify-between">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-cover p-2"
                                 src="./assets/images/Creato Arquitectura Map Image.png" alt="image">
                             <div>
-                                <h2 class="text-xl font-bold">Creato Arquitectura & plotter</h2>
+                                <h2 class="text-xl font-bold text-theme-primary">Creato Arquitectura & plotter</h2>
                                 <p>graphiste</p>
                             </div>
                         </div>
                         <div>
-                            <p
-                                class=" bg-white rounded-2xl p-2 text-gray-500/70 text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                            <p class=" bg-theme-secondary rounded-2xl p-2 text-xs border-2 border-theme">
                                 2015 - 2017</p>
                         </div>
                     </div>
@@ -232,8 +227,7 @@
 
                     <div class="flex gap-5 grow">
 
-                        <div
-                            class="bg-gray-200 rounded-2xl p-5 flex flex-col items-start gap-2 shadow-lg  dark:bg-neutral-800">
+                        <div class="bg-theme-secondary rounded-2xl p-5 flex flex-col items-start gap-2 shadow-theme">
                             <p class="font-bold text-sm">Code</p>
                             <div class="flex gap-2 sm:flex-wrap">
                                 <img class="w-6 h-6 object-contain" src="./assets/images/git.png" alt="image"><img
@@ -246,8 +240,8 @@
                         </div>
 
                         <div
-                            class="bg-gray-200 rounded-2xl p-5 flex flex-col items-start gap-2 grow shadow-lg  dark:bg-neutral-800">
-                            <p class="font-bold text-sm">Outils de design</p>
+                            class="bg-theme-secondary rounded-2xl p-5 flex flex-col items-start gap-2 grow shadow-theme">
+                            <p class="font-bold text-sm text-theme-primary">Outils de design</p>
                             <div class="flex gap-2 sm:flex-wrap">
                                 <img class="w-6 h-6 object-contain" src="./assets/images/figma.png" alt="image"><img
                                     class="w-6 h-6 object-contain" src="./assets/images/ilustrator.png" alt="image"><img
@@ -263,7 +257,7 @@
                     <div class="flex gap-5">
                         <div class="rounded-2xl flex items-start gap-2">
                             <div
-                                class="bg-gray-200 rounded-2xl w-full flex flex-col items-start gap-6 p-5 shadow-lg  dark:bg-neutral-800">
+                                class="bg-theme-secondary rounded-2xl w-full flex flex-col items-start gap-6 p-5 shadow-theme">
                                 <p class="font-bold text-sm">Langages</p>
                                 <div class="flex gap-2 items-center justify-center p-5">
                                     <img class="w-6 h-6 object-contain"
@@ -276,26 +270,20 @@
                             </div>
                         </div>
 
-                        <div class="bg-gray-200 rounded-2xl p-5 flex flex-col gap-2 shadow-lg  dark:bg-neutral-800">
+                        <div class="bg-theme-secondary rounded-2xl p-5 flex flex-col gap-2 shadow-theme">
                             <p class="font-bold text-sm">Soft Skills</p>
                             <div class="flex flex-wrap gap-2">
-                                <p
-                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                <p class="bg-theme-secondary p-2 shadow-theme rounded-2xl text-sm ">
                                     Esprit analytique</p>
-                                <p
-                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                <p class="bg-theme-secondary p-2 shadow-theme rounded-2xl text-sm ">
                                     Organisation</p>
-                                <p
-                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                <p class="bg-theme-secondary p-2 shadow-theme rounded-2xl text-sm ">
                                     Proactivité</p>
-                                <p
-                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                <p class="bg-theme-secondary p-2 shadow-theme rounded-2xl text-sm ">
                                     Flexibilité </p>
-                                <p
-                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                <p class="bg-theme-secondary p-2 shadow-theme rounded-2xl text-sm ">
                                     Rigueur</p>
-                                <p
-                                    class="bg-white p-2 shadow-lg rounded-2xl text-sm dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                                <p class="bg-theme-secondary p-2 shadow-lg rounded-2xl text-sm">
                                     Aisance relationnell </p>
                             </div>
                         </div>
@@ -308,8 +296,7 @@
             <article>
                 <h2 class="text-2xl font-bold pb-5">Education</h2>
                 <div class="flex flex-col gap-5">
-                    <div
-                        class="bg-gray-200 rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg dark:bg-neutral-800">
+                    <div class="bg-theme-secondary rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain self-center"
                                 src="./assets/images/IFAPME_logo-couleurs+cadreblanc.jpg" alt="image">
@@ -319,12 +306,11 @@
                                 <p class="text-xs">Château Massart - liège</p>
                             </div>
                         </div>
-                        <p
-                            class="bg-white rounded-xl p-2 text-xs  text-gray-500/70 dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                        <p class="bg-theme-secondary rounded-xl p-2 text-xs border-2 border-theme">
                             2023 - 2025</p>
                     </div>
                     <div
-                        class="bg-gray-200 rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg dark:bg-neutral-800">
+                        class="bg-theme-secondary rounded-2xl p-5 flex gap-5 items-center justify-between shadow-theme">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain p-1.5"
                                 src="./assets/images/andap.png" alt="image">
@@ -334,8 +320,7 @@
                                 <p class="text-xs">Manizales - Caldas</p>
                             </div>
                         </div>
-                        <p
-                            class="bg-white rounded-xl p-2 text-xs  text-gray-500/70 dark:bg-neutral-800 dark:border dark:border-orange-50/20 dark:text-white/50">
+                        <p class="bg-theme-secondary rounded-xl p-2 text-xs border-2 border-theme">
                             2014 - 2017</p>
                     </div>
                 </div>
@@ -344,7 +329,7 @@
     </main>
 
     <!-- footer section -->
-    <footer class="p-5 bg-gray-200  dark:bg-neutral-800 ">
+    <footer class="p-5 bg-theme-secondary">
         <div class="container mx-auto flex justify-center items-center">
             <p id="footer-date" class="text-gray-500 text-xs"></p>
         </div>
