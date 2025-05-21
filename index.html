@@ -41,12 +41,12 @@
             class="flex gap-5 p-10 sm:flex-wrap sm:justify-evenly items-center justify-between md:flex-row max-sm:flex-col">
 
             <!-- photo de profile -->
-            <article class="w-80 h-50 min-w-80 min-h-50 shadow-xl rounded-2xl">
+            <article id="draggableElement" class="w-80 h-50 min-w-80 min-h-50 shadow-xl rounded-2xl">
                 <img src="./assets/images/IMG_0257.jpeg" class="w-full h-full object-cover rounded-2xl">
             </article>
 
             <!-- mes sites web -->
-            <article
+            <article id="draggableElement"
                 class="flex flex-col justify-between p-5 gap-3 items-center bg-theme-secondary rounded-2xl w-80 h-50 min-w-80 min-h-50 shadow-theme">
                 <h1 class="font-bold text-2xl self-start text-theme-primary">Mes sites web</h1>
                 <article class="flex flex-wrap gap-5">
@@ -78,7 +78,7 @@
             </article>
 
             <!-- mes hobbies -->
-            <article
+            <article id="draggableElement"
                 class="bg-theme-secondary rounded-2xl p-5 w-80 h-50 min-w-80 min-h-50 flex flex-col gap-5 justify-between items-center shadow-theme">
                 <h1 class="font-bold text-2xl self-start text-theme-primary">Mes hobbies</h1>
                 <article class="flex flex-wrap gap-2">
@@ -108,7 +108,7 @@
             </article>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-sm">
-                <article
+                <article id="draggableElement"
                     class="bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="w-full flex justify-between">
                         <div class="flex gap-5 max-sm:flex-col">
@@ -135,7 +135,7 @@
                     </div>
                 </article>
 
-                <article
+                <article id="draggableElement"
                     class="bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="flex w-full justify-between">
                         <div class="flex gap-5 max-sm:flex-col">
@@ -163,7 +163,7 @@
                     </div>
                 </article>
                 <!--  -->
-                <article
+                <article id="draggableElement"
                     class="bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="w-full justify-between flex">
                         <div class="flex gap-5 max-sm:flex-col">
@@ -190,7 +190,7 @@
                     </div>
                 </article>
                 <!--  -->
-                <article
+                <article id="draggableElement"
                     class=" bg-theme-secondary rounded-2xl flex flex-col gap-5 items-baseline p-10 min-h-40 min-w-80 shadow-theme">
                     <div class="w-full flex justify-between">
                         <div class="flex gap-5 max-sm:flex-col">
@@ -240,7 +240,8 @@
 
                     <div class="flex gap-5 grow max-sm:flex-col">
 
-                        <div class="bg-theme-secondary rounded-2xl p-5 flex flex-col items-start gap-2 shadow-theme">
+                        <div id="draggableElement"
+                            class="bg-theme-secondary rounded-2xl p-5 flex flex-col items-start gap-2 shadow-theme">
                             <p class="font-bold text-sm">Code</p>
                             <div class="flex gap-2 sm:flex-wrap">
                                 <img class="w-6 h-6 object-contain" src="./assets/images/git.png" alt="image"><img
@@ -252,7 +253,7 @@
                             </div>
                         </div>
 
-                        <div
+                        <div id="draggableElement"
                             class="bg-theme-secondary rounded-2xl p-5 flex flex-col items-start gap-2 grow shadow-theme">
                             <p class="font-bold text-sm text-theme-primary">Outils de design</p>
                             <div class="flex gap-2 sm:flex-wrap">
@@ -269,7 +270,7 @@
 
                     <div class="flex gap-5">
                         <div class="rounded-2xl flex items-start gap-2">
-                            <div
+                            <div id="draggableElement"
                                 class="bg-theme-secondary rounded-2xl w-full flex flex-col items-start gap-6 p-5 shadow-theme">
                                 <p class="font-bold text-sm">Langages</p>
                                 <div class="flex gap-2 items-center justify-center p-5">
@@ -283,7 +284,8 @@
                             </div>
                         </div>
 
-                        <div class="bg-theme-secondary rounded-2xl p-5 flex flex-col gap-2 shadow-theme">
+                        <div id="draggableElement"
+                            class="bg-theme-secondary rounded-2xl p-5 flex flex-col gap-2 shadow-theme">
                             <p class="font-bold text-sm">Soft Skills</p>
                             <div class="flex flex-wrap gap-2">
                                 <p class="bg-theme-secondary p-2 shadow-theme rounded-2xl text-sm ">
@@ -309,7 +311,8 @@
             <article>
                 <h2 class="text-2xl font-bold pb-5">Education</h2>
                 <div class="flex flex-col gap-5">
-                    <div class="bg-theme-secondary rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg">
+                    <div id="draggableElement"
+                        class="bg-theme-secondary rounded-2xl p-5 flex gap-5 items-center justify-between shadow-lg">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain self-center"
                                 src="./assets/images/IFAPME_logo-couleurs+cadreblanc.jpg" alt="image">
@@ -322,7 +325,7 @@
                         <p class="bg-theme-secondary rounded-xl p-2 text-xs border-2 border-theme">
                             2023 - 2025</p>
                     </div>
-                    <div
+                    <div id="draggableElement"
                         class="bg-theme-secondary rounded-2xl p-5 flex gap-5 items-center justify-between shadow-theme">
                         <div class="flex gap-5">
                             <img class="rounded-full w-20 h-20 bg-white object-contain p-1.5"
@@ -348,7 +351,15 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
     <script src="darkMode.js"></script>
+    <script>
+        gsap.registerPlugin(Draggable);
+        Draggable.create("#draggableElement", "Burger");
+
+    </script>
 </body>
 
 </html>

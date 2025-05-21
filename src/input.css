@@ -111,3 +111,15 @@ html {
     transform: scale(1);
   }
 }
+
+#area {
+  width: 800px;
+  height: 550px;
+  display: flex;
+  background-color: black;
+  align-items: center;
+}
+
+#draggableElement {
+  border: none;
+}
